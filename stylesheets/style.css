@@ -96,7 +96,7 @@ nav ul li {
 }
 
 #banner {
-    background: url(./images/brett-zeck-eyfMgGvo9PA-unsplash.jpg), brown;
+    background: url(.././images/brett-zeck-eyfMgGvo9PA-unsplash.jpg), brown;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -116,7 +116,7 @@ nav ul li {
 }
 
 .banner-date, .banner-text {
-    margin: .5em 0;
+    margin: 1em 0;
 }
 
 .banner-title a {
