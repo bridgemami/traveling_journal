@@ -1,0 +1,22 @@
+.head-shot {
+    border-radius: 50%;
+    width: 33.3%;
+}
+
+@media(min-width:768px) {
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .head-shot {
+        border-radius: 50%;
+        width: 20%;
+        height: 20%;
+    }
+
+    .intro-column {
+       width: 75%; 
+    }
+}

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+:root {
+    --yellow: #f2d022;
+    --dark-orange: #f28705;
+    --light-blue: #389ED9;
+    --dark-red: #bf1304;
+    --black: #0d0d0d;
+    --white: snow; 
+    --oxygen:  'Oxygen', sans-serif;
+    --pointer: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--oxygen);
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    background: #FAFAFA;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    cursor: var(--pointer);
+    color:var(--dark-red);
+
+}
+
+.title {
+    margin: 1em 0 0 0;
+    padding: 0 .5em;
+    font-size: 1.5rem;
+}
+
+.title a {
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: .5em 0;
+}
+
+.icons {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.hide {
+    display: none !important;
+}
+
+#nav-bar {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin:0;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin:1em 0 0 0;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: var(--pointer);
+}
+nav ul li {
+    margin-bottom:.5em;
+}
+
+#banner {
+    background: url(./images/brett-zeck-eyfMgGvo9PA-unsplash.jpg), brown;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    min-height: 40vh;
+    color: var(--white);
+}
+
+.banner-title {
+    margin: 0;
+}
+
+ .side-padding {
+    padding: 0 .75em;
+}
+
+.banner-date, .banner-text {
+    margin: .5em 0;
+}
+
+.banner-title a {
+    color: var(--white);
+}
+
+.banner-title a:hover,
+.banner-title a:focus,
+#view-more:hover, #view-less:hover,
+#view-more:focus, #view-less:focus
+{
+    cursor: var(--pointer);
+    font-size: 1.60rem;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1em 0 .5em 0;
+}
+
+.blog{
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-image {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.blog-title {
+    margin: 0;
+}
+
+.blog-date, .blog-title {
+    align-self: flex-start;
+}
+
+.blog-date {
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+#view-more, #view-less {
+    font-weight: bold;
+    cursor: var(--pointer);
+    text-align: center;
+}
+
+footer {
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title {
+    margin: .5em 0;
+}
+
+footer a {
+    color:var(--white);
+}
+
+.copyright {
+    font-size: .75em;
+    margin: .5em 0 .75em 0;
+}
+
+@media(min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .icons, .view {
+        display: none;
+    }
+
+    nav {
+        align-self: center;
+    }
+
+    .title, #nav-bar  {
+    margin: 0 !important;
+    }
+
+    #nav-bar {
+        display: flex !important;
+        flex-direction: row;
+        min-width: 33vw;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .site {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        padding: 1em 0;
+        align-items: center;
+    }
+
+    #banner {
+        min-height: 33vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .side-padding {
+        padding:0 1em;
+    }
+
+    .blog-container {
+    flex-direction: row;
+    margin: 1em 0;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: flex-start;
+    }
+
+    .align-middle {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .blog {
+        max-width: 30%;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        object-fit: cover;
+
+    }
+
+    .blog-image {
+        align-self: flex-start;
+    }
+
+    .blog-description {
+        align-self: flex-end;
+    }
+
+    #blog-container-two {
+        display: flex !important;
+    }
+}
